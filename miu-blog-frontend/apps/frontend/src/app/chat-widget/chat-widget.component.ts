@@ -49,7 +49,7 @@ export class ChatWidgetComponent {
           this.loading = false;
           this.messages.push({
             role: 'assistant',
-            content: '⚠️ Error contacting Edd',
+            content: 'Error contacting Edd! Try again later.',
           });
           this.scrollToBottom();
         },
