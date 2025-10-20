@@ -16,7 +16,6 @@ public class ChatController {
 
     @PostMapping
     public ResponseEntity<ChatResponse> chat(@RequestBody ChatRequest request) {
-        System.out.println("✅ Parsed request: " + request);
         ChatResponse response = chatService.sendToLlama(request);
         return ResponseEntity.ok(response);
     }
